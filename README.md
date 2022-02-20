@@ -6,12 +6,12 @@ Useful to generate Tailwind CSS palettes.
 
 ```js
     // Generate a luminance palette
-    palettey.createPalleteFromColor("primary", "#7953e0", {
+    createPalleteFromColor("primary", "#7953e0", {
       useLightness: false,
     })
     
     // Generate a lightness palette
-    palettey.createPalleteFromColor("primary", "#7953e0", {})
+    createPalleteFromColor("primary", "#7953e0", {})
 ```
 
 Check out [Palette Generator](https://tailwind.simeongriggs.dev) to try the generator online.
