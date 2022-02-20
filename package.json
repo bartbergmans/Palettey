@@ -12,5 +12,11 @@
     "tailwindcss"
   ],
   "author": "Bart Bergmans <mail@bartbergmans.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "nanoid": "^3.3.1"
+  }
 }
