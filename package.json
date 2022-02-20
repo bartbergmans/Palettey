@@ -1,15 +1,21 @@
 {
   "name": "palettey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a 10-color pallete from a base color",
   "main": "index.js",
+  "repository": "bartbergmans/palettey",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
+    "front-end",
+    "development",
+    "dev",
     "palette",
     "color",
-    "tailwindcss"
+    "tailwindcss",
+    "generator",
+    "generate"
   ],
   "author": "Bart Bergmans <mail@bartbergmans.com>",
   "license": "MIT",
