@@ -1,17 +1,38 @@
-# Palettey
+# Palettey [![GitHub license](https://img.shields.io/github/license/bartbergmans/Palettey)](https://github.com/bartbergmans/Palettey/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/palettey)](https://www.npmjs.com/package/palettey) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bartbergmans/palettey/CodeQL)](https://github.com/bartbergmans/Palettey/actions)
 
 Package to generate a 10-color palette based on a given color hex.
 Useful to generate Tailwind CSS palettes.
+
+## Install
+```
+npm install --save palettey
+```
+
 ## Usage
 
 ```js
-    // Generate a luminance palette
-    createPalleteFromColor("primary", "#7953e0", {
-      useLightness: false,
-    })
+import { createPalleteFromColor } from "palettey";
+
+// Generate a luminance palette
+createPalleteFromColor("primary", "#7953e0", {
+  useLightness: false,
+})
     
-    // Generate a lightness palette
-    createPalleteFromColor("primary", "#7953e0", {})
+// Generate a lightness palette
+createPalleteFromColor("primary", "#7953e0", {})
+```
+
+To create css variables for the generated palette you can use:
+
+```js
+const palette = createPalleteFromColor("primary", "D20000", {});
+Object.entries(palette.test).forEach((entry) => {
+  const [step, color] = entry;
+  document.documentElement.style.setProperty(
+    `--color-primary-${step}`,
+    color
+  );
+});
 ```
 
 Check out [Palette Generator](https://tailwind.simeongriggs.dev) to try the generator online.
