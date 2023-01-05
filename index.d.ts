@@ -29,7 +29,7 @@ export interface PaletteOutput {
   [key: string]: Palette;
 }
 
-export function createPalleteFromColor(
+export function createPaletteFromColor(
   name: string,
   baseColor: string,
   config: PaletteConfig

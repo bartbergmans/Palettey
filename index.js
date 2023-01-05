@@ -17,7 +17,7 @@ const {
 
 const { DEFAULT_PALETTE_CONFIG } = require("./lib/constants.js");
 
-const createPalleteFromColor = (name, baseColor, config) => {
+const createPaletteFromColor = (name, baseColor, config) => {
   if (!name || !isValidName(name) || !baseColor || !isHex(baseColor)) {
     return null;
   }
@@ -94,4 +94,4 @@ const createSwatches = (palette) => {
   return swatches;
 };
 
-module.exports = { createPalleteFromColor };
+module.exports = { createPaletteFromColor };

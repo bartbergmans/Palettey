@@ -11,21 +11,21 @@ npm install --save palettey
 ## Usage
 
 ```js
-import { createPalleteFromColor } from "palettey";
+import { createPaletteFromColor } from "palettey";
 
 // Generate a luminance palette
-createPalleteFromColor("primary", "#7953e0", {
+createPaletteFromColor("primary", "#7953e0", {
   useLightness: false,
 })
     
 // Generate a lightness palette
-createPalleteFromColor("primary", "#7953e0", {})
+createPaletteFromColor("primary", "#7953e0", {})
 ```
 
 To create css variables for the generated palette you can use:
 
 ```js
-const palette = createPalleteFromColor("primary", "D20000", {});
+const palette = createPaletteFromColor("primary", "D20000", {});
 Object.entries(palette.test).forEach((entry) => {
   const [step, color] = entry;
   document.documentElement.style.setProperty(
