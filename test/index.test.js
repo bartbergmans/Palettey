@@ -2,7 +2,7 @@ const palettey = require("../index.js");
 
 it("generates a palette based on a color", () => {
   expect(
-    palettey.createPalleteFromColor("primary", "#7953e0", {})
+    palettey.createPaletteFromColor("primary", "#7953e0", {})
   ).toMatchObject({
     primary: {
       50: "#F1EEFC",
@@ -21,7 +21,7 @@ it("generates a palette based on a color", () => {
 
 it("generates a luminance palette based on a color", () => {
   expect(
-    palettey.createPalleteFromColor("primary", "#7953e0", {
+    palettey.createPaletteFromColor("primary", "#7953e0", {
       useLightness: false,
     })
   ).toMatchObject({
