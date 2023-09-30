@@ -31,7 +31,7 @@ it("generates a luminance palette based on a color", () => {
       200: "#DACFF6",
       300: "#C2B1F1",
       400: "#A78FEB",
-      500: "##7953E0",
+      500: "#7953E0",
       600: "#6E45DE",
       700: "#5A2BD9",
       800: "#4A21BA",

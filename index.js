@@ -81,7 +81,7 @@ const createSwatches = (palette) => {
       stop: paletteI,
       hex:
         paletteI === 500
-          ? `#${palette.value.toUpperCase()}`
+          ? `${palette.value.toUpperCase()}`
           : newHex.toUpperCase(),
       h: newH,
       hScale: hueScale[i].tweak,
