@@ -39,3 +39,4 @@ Check out [Palette Generator](https://tailwind.simeongriggs.dev) to try the gene
 
 ## Credits
 Based on [tailwind-css-palette-generator](https://github.com/SimeonGriggs/tailwind-css-palette-generator) created by [Simeon Griggs](https://simeongriggs.dev/)
+Contribution by [George Ciesinski](https://github.com/GeorgeCiesinski)
