@@ -11,6 +11,7 @@ const {
   luminanceFromHex,
   lightnessFromHSLum,
   isValidName,
+  checkHash,
   isHex,
   output,
 } = require("./lib/helpers.js");
@@ -81,7 +82,7 @@ const createSwatches = (palette) => {
       stop: paletteI,
       hex:
         paletteI === 500
-          ? `#${palette.value.toUpperCase()}`
+          ? checkHash(palette.value).toUpperCase()
           : newHex.toUpperCase(),
       h: newH,
       hScale: hueScale[i].tweak,
