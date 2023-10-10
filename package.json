@@ -1,6 +1,6 @@
 {
   "name": "palettey",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate a 10-color palette from a base color",
   "main": "index.js",
   "repository": "bartbergmans/palettey",
